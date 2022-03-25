@@ -1,5 +1,4 @@
 import { Box, Container, Typography } from "@mui/material";
-import BgSwipeBox from "../../components/BgSwipeBox";
 import MainButton, { SecondButton } from "../../Components/Button";
 import Image from "next/image";
 import { Fade, Slide } from "react-awesome-reveal";
