@@ -15,8 +15,22 @@ import MenuLink from "../../Components/MenuLink";
 import CallIcon from "@mui/icons-material/Call";
 import { useSpring, animated, config } from "react-spring";
 
-export default function Header() {
+import Reveal from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
 
+const logoAnimation = keyframes`
+  0% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(180deg);
+  }
+  50% {
+    transform: rotateY(0);
+  }
+`;
+
+export default function Header() {
   return (
     <Box
       component="header"
@@ -35,12 +49,14 @@ export default function Header() {
     >
       <Container maxWidth="xl">
         <Box sx={{ display: "flex", alignItems: "start" }}>
-          <Image
-            src="/images/logo.svg"
-            alt="Picture of the author"
-            width={120}
-            height={120}
-          />
+          <Reveal damping duration={4000} keyframes={logoAnimation}>
+            <Image
+              src="/images/logo.svg"
+              alt="Picture of the author"
+              width={120}
+              height={120}
+            />
+          </Reveal>
           <Box
             sx={{ flex: 1, pl: 4, display: "flex", flexDirection: "column" }}
           >

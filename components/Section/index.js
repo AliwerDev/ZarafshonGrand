@@ -24,24 +24,21 @@ export default function Section({ backImage, children, images, ...props }) {
         backgroundImage: 'url("' + img + '")',
         backgroundPosition: "center",
         backgroundSize: "cover",
-        transition: "background-image 1s ease-in-out",
+        transition: "all 1s ease-in-out",
         backgroundRepeat: "no-repeat",
+        position: "relative",
+        overflow: "hidden",
       }}
       className="section"
     >
       <Container
-        maxWidth={"sm"}
+        maxWidth={"xl"}
         sx={{
-          marginRight: "auto !important",
-          height: "100%",
           display: "flex",
-          marginTop: 12,
           flexDirection: "column",
-          justifyContent: "center",
-          alignItems: { xs: "center", md: "start" },
-          textAlign: { xs: "center", md: "start" },
-          mx: { xs: 2, sm: 5, md: 5 },
-          overflow: "hidden",
+          justifyContent: { xs: "flex-end" },
+          height: "100% ",
+          pb: { md: 5, xl: 6, xs: 2 },
         }}
       >
         {children}
