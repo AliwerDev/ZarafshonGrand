@@ -31,18 +31,7 @@ export default function Section({ backImage, children, images, ...props }) {
       }}
       className="section"
     >
-      <Container
-        maxWidth={"xl"}
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: { xs: "flex-end" },
-          height: "100% ",
-          pb: { md: 5, xl: 6, xs: 2 },
-        }}
-      >
-        {children}
-      </Container>
+      {children}
     </Box>
   );
 }

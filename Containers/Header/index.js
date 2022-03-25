@@ -43,7 +43,7 @@ export default function Header() {
         left: 0,
         zIndex: 200,
         background:
-          "linear-gradient(180deg, #F8F4E8 24.82%, rgba(248, 244, 232, 0.78) 60.73%, rgba(248, 244, 232, 0.53) 83.06%, rgba(255, 255, 255, 0.0) 99.87%)",
+          "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.45063560029380345) 32%, rgba(255,255,255,1) 100%)",
         width: "100%",
       }}
     >
