@@ -4,16 +4,16 @@ import React, { useEffect } from "react";
 export default function Section({ backImage, children, images, ...props }) {
   const [img, setImg] = React.useState(images ? images[0] : backImage);
 
-  if (false) {
-    useEffect(() => {
-      setInterval(() => {
-        setImg(
-          (image) =>
-            images[images.findIndex((i) => i == image) + 1] || images[0]
-        );
-      }, 5000);
-    }, []);
-  }
+  // useEffect(() => {
+  //   if (images) {
+  //     setInterval(() => {
+  //       setImg(
+  //         (image) =>
+  //           images[images.findIndex((i) => i == image) + 1] || images[0]
+  //       );
+  //     }, 5000);
+  //   }
+  // }, []);
   return (
     <Box
       {...props}
