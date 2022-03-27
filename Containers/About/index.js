@@ -4,6 +4,7 @@ import { Fade, Rotate, Slide } from "react-awesome-reveal";
 import MainButton from "../../Components/Button";
 import Section from "../../Components/Section";
 import VideoMini from "../../Components/VideoMini";
+import CountUp from "react-countup";
 
 export default function AboutSection() {
   return (
@@ -112,7 +113,7 @@ export const AboutNumber = ({ num, text }) => {
         }}
       >
         <Typography variant="h4" color={"#815a23"} component="h1">
-          {num}
+          <CountUp end={num} delay={3} duration={5} />
         </Typography>
       </Box>
       <Typography textAlign="center" mt={2} fontSize="14px">
