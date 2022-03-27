@@ -20,6 +20,7 @@ export default function MainSection() {
           display: "flex",
           flexDirection: "column",
           position: "static",
+          alignItems: { xs: "center", md: "flex-start" },
           justifyContent: { xs: "flex-end" },
           height: "100% ",
           pb: { md: 5, xl: 6, xs: 2 },

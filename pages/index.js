@@ -4,6 +4,7 @@ import AboutSection from "../Containers/About";
 import MainSection from "../Containers/MainSection";
 import NewsSection from "../Containers/NewsSection";
 import Head from "next/head";
+import Company from "../Containers/Company";
 
 const Fullpage = () => (
   <>
@@ -25,6 +26,7 @@ const Fullpage = () => (
             <MainSection />
             <AboutSection />
             <NewsSection />
+            <Company />
           </ReactFullpage.Wrapper>
         );
       }}

@@ -27,7 +27,6 @@ export default function Section({ backImage, children, images, ...props }) {
         transition: "all 1s ease-in-out",
         backgroundRepeat: "no-repeat",
         position: "relative",
-        overflow: "hidden",
       }}
       className="section"
     >

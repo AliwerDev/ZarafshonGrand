@@ -14,6 +14,7 @@ export default function AboutSection() {
           display: "flex",
           flexDirection: "column",
           position: "static",
+          alignItems: { xs: "center", md: "flex-start" },
           justifyContent: { xs: "flex-end" },
           height: "100% ",
           pb: { md: 5, xl: 6, xs: 2 },
@@ -37,7 +38,7 @@ export default function AboutSection() {
             cascade
           >
             <Typography
-              variant="h5"
+              variant="h4"
               component="h1"
               sx={{ fontWeight: "bold", mb: 4 }}
             >
@@ -51,11 +52,11 @@ export default function AboutSection() {
             </Typography>
             <Box
               sx={{
-                py: 5,
+                py: 3,
                 width: "100%",
                 display: "flex",
                 gap: 2,
-                justifyContent: "start",
+                justifyContent: { xs: "center", md: "flex-start" },
                 flexWrap: "wrap",
               }}
             >
