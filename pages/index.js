@@ -2,9 +2,9 @@ import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import AboutSection from "../Containers/About";
 import MainSection from "../Containers/MainSection";
-import NewsSection from "../Containers/NewsSection";
 import Head from "next/head";
 import Company from "../Containers/Company";
+import News from "../Containers/NewsSection";
 
 const Fullpage = () => (
   <>
@@ -25,7 +25,7 @@ const Fullpage = () => (
           <ReactFullpage.Wrapper>
             <MainSection />
             <AboutSection />
-            <NewsSection />
+            <News />
             <Company />
           </ReactFullpage.Wrapper>
         );
